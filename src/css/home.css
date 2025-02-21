@@ -1,0 +1,456 @@
+/* General Styles */
+
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Default Theme (Black background, White font color) */
+:root {
+    --text-color: white;
+    --highlight-color: #ff4d4d; /* Red highlight color */
+    --background-color: black;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to bottom, rgba(255, 0, 0, 0.242), rgba(0, 0, 0, 0.418)), url('D:/React/blog/public/background of blog.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--text-color);
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    z-index: -1;
+}
+
+.hero-section .hero-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s;
+}
+
+.hero-section .hero-title:hover {
+    color: var(--highlight-color);
+}
+
+.hero-section .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero-section .hero-explore-btn {
+    display: inline-block;
+    background: var(--highlight-color);
+    color: var(--text-color);
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-section .hero-explore-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Featured Motorcycles Section */
+.featured-motorcycles {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, rgba(255, 1, 1, 0.878), rgba(0, 0, 0, 0.752));
+    text-align: center;
+}
+
+.featured-motorcycles .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: var(--text-color);
+}
+
+.featured-motorcycles .section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--highlight-color);
+    transition: width 0.3s, left 0.3s;
+}
+
+.featured-motorcycles .section-title:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.motorcycle-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.motorcycle-card {
+    background: var(--background-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: var(--text-color);
+}
+
+.motorcycle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.motorcycle-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.motorcycle-card img:hover {
+    transform: scale(1.1);
+}
+
+.motorcycle-card .card-title {
+    font-size: 1.5rem;
+    margin: 20px 0 10px;
+}
+
+.motorcycle-card .card-description {
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+.motorcycle-card .card-explore-btn {
+    display: block;
+    background: var(--highlight-color);
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 10px 15px 20px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.motorcycle-card .card-explore-btn:hover {
+    background: #ff1a1a;
+    transform: scale(1.05);
+}
+
+/* Latest News Section */
+.latest-news {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(224, 0, 0, 0.7)), no-repeat center center/cover;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.latest-news .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.news-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background: var(--background-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: var(--text-color);
+}
+
+.news-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.news-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: var(--highlight-color);
+    transition: width 0.3s;
+    z-index: -1;
+}
+
+.news-card:hover:before {
+    width: 100%;
+}
+
+.news-card .news-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.news-card .news-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.news-card .news-read-more-btn {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-card .news-read-more-btn:hover {
+    text-decoration: underline;
+}
+
+/* Top Reviews Section */
+.top-reviews {
+    padding: 50px 20px;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+    text-align: center;
+}
+
+.top-reviews .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.review-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background: var(--background-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s, box-shadow 0.3s;
+    color: var(--text-color);
+}
+
+.review-card:hover {
+    background: var(--highlight-color);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.review-card .review-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.review-card .review-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.review-card .review-read-more-btn {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.review-card .review-read-more-btn:hover {
+    text-decoration: underline;
+}
+
+/* User Testimonials Section */
+.user-testimonials {
+    padding: 50px 20px;
+    text-align: center;
+    background: linear-gradient(to right, rgba(12, 12, 12, 0.57), rgba(219, 48, 48, 0.723)), no-repeat center center/cover;
+}
+
+.user-testimonials .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background: linear-gradient(135deg, var(--highlight-color), #ff4d4d72);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    color: var(--text-color);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    background: #000000;
+    color: black;
+    
+}
+
+.testimonial-card .testimonial-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.testimonial-card .testimonial-author {
+    font-size: 1.1rem;
+    text-align: right;
+    color: #f7931e;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+    background: linear-gradient(to right, var(--highlight-color), #910404);
+    color: var(--text-color);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-section .cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section .cta-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-section .cta-explore-btn {
+    display: inline-block;
+    background: var(--text-color);
+    color: var(--background-color);
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-section .cta-explore-btn:hover {
+    transform: scale(1.1);
+    background: var(--highlight-color);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-section {
+        padding: 80px 20px;
+    }
+
+    .motorcycle-cards, .news-cards, .review-cards, .testimonial-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .motorcycle-card, .news-card, .review-card, .testimonial-card {
+        width: 90%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .cta-section .cta-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-section .hero-description {
+        font-size: 1rem;
+    }
+
+    .motorcycle-card, .news-card, .review-card, .testimonial-card {
+        width: 100%;
+    }
+
+    .cta-section .cta-title {
+        font-size: 1.8rem;
+    }
+
+    .cta-section .cta-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-section .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .motorcycle-card, .news-card, .review-card, .testimonial-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cta-section .cta-title {
+        font-size: 1.6rem;
+    }
+
+    .cta-section .cta-description {
+        font-size: 0.9rem;
+    }
+
+    .cta-section .cta-explore-btn {
+        padding: 10px 15px;
+    }
+}

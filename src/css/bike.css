@@ -1,0 +1,120 @@
+/* General Styling */
+.biketot {
+  font-family: Arial, sans-serif;
+  background-image: url('D:\React\blog\public\background of blog.jpg');
+  background-size: 100%;
+  min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Section Padding */
+#introduction,
+#engine,
+#design,
+#riding-experience {
+  padding: 20px;
+}
+
+/* Introduction and Bike Info */
+.intro, .aboutbike {
+  color: #fff;
+}
+
+/* Bike Name Styling */
+.bikename {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Bike Image Styling */
+.bikeimage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* About Bike Styling */
+.aboutbike {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Footer Styling */
+.bikefooter {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* For Tablets: Adjusting padding and text sizes */
+  .bikename {
+      font-size: 1.8em; /* Slightly smaller font size */
+  }
+
+  .aboutbike {
+      font-size: 1.1em; /* Adjust font size for better readability */
+  }
+
+  /* Section Padding Adjustments */
+  #introduction,
+  #engine,
+  #design,
+  #riding-experience {
+      padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  /* Making the header text size responsive */
+  header {
+      padding: 15px;
+      font-size: 1.1em; /* Adjust header text size */
+  }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  /* For Mobile: Further adjust font sizes and layout */
+  .bikename {
+      font-size: 1.5em; /* Make the bike name smaller on mobile */
+  }
+
+  .aboutbike {
+      font-size: 1em; /* Further reduce font size for mobile devices */
+      line-height: 1.4; /* Adjust line height for readability */
+  }
+
+  /* Ensure images are not too large */
+  .bikeimage {
+      max-width: 90%; /* Allow images to fit better on small screens */
+  }
+
+  /* Reduce padding for smaller screens */
+  #introduction,
+  #engine,
+  #design,
+  #riding-experience {
+      padding: 10px;
+  }
+
+  /* Make header text and padding mobile-friendly */
+  header {
+      padding: 10px;
+      font-size: 1em; /* Make header text smaller on mobile */
+  }
+
+  /* Footer Adjustments */
+  .bikefooter {
+      font-size: 0.9em; /* Reduce font size in footer */
+      padding: 8px; /* Reduce footer padding */
+  }
+}

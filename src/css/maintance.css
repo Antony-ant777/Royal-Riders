@@ -1,0 +1,243 @@
+/* General Page Styling */
+.maintenance-page {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(135deg, #000 50%, #ff0000 100%);
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Main Heading */
+.main-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.7);
+    animation: slideDown 1s ease-in-out;
+}
+
+/* Intro Paragraph */
+.intro-paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    animation: fadeInText 2s ease-in-out;
+}
+
+/* Bike Section */
+
+.bike-section {
+    margin: 20px auto;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(255, 0, 0, 0.7));
+    padding: 20px;
+    border-radius: 10px;
+    width: 55%;
+   
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.bike-model {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 5px;
+}
+
+/* Tips List */
+.tips-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.tip-item {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    padding-left: 15px;
+    position: relative;
+    animation: slideUp 2s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.tip-item::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #ff0000;
+    font-size: 1.2rem;
+}
+
+/* Feedback Section */
+.feedback-section {
+    margin-top: 40px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.1));
+    padding: 25px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.feedback-heading {
+    font-size: 1.7rem;
+    color: #ff0000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Form Styling */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.form-input, .form-textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 97%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.form-input:focus, .form-textarea:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+.submit-button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: linear-gradient(90deg, #ff0000, #000);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    animation: pulse 1.5s infinite;
+}
+
+.submit-button:hover {
+    background: linear-gradient(90deg, #ff0000, #333);
+    transform: scale(1.05);
+}
+
+/* User Tips Section */
+.user-tip {
+    background: rgba(255, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    max-width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.usertipss{
+    color: #ff0000;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .main-heading {
+        font-size: 2rem;
+    }
+    .intro-paragraph {
+        font-size: 1rem;
+    }
+    .bike-model {
+        font-size: 1.5rem;
+    }
+    .tip-item {
+        font-size: 0.9rem;
+    }
+    .feedback-heading {
+        font-size: 1.4rem;
+    }
+    .form-input, .form-textarea {
+        font-size: 0.9rem;
+    }
+    .submit-button {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+}

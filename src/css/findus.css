@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
+  color: #ffffff;
+  animation: backgroundFade 5s infinite alternate;
+}
+
+/* Page Container */
+.find-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header */
+.find-header {
+  background: linear-gradient(135deg, #ff0000, #330000);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+  animation: slideInFromTop 1.5s ease-in-out;
+}
+
+.find-header h1 {
+  margin: 0;
+  text-shadow: 2px 2px 10px rgba(178, 170, 170, 0.7);
+}
+
+/* Content Container */
+.find-content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Section Styles */
+.find-find-us,
+.find-contact-us {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.find-find-us h2 , p{
+  color: #fff;
+
+}
+
+.find-find-us:hover,
+.find-contact-us:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Map Styles */
+.find-map {
+  width: 100%;
+  height: 300px;
+  border: 2px solid #ff0000;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.find-map:hover {
+  transform: scale(1.02);
+}
+
+/* Form Styles */
+.find-contact-form .find-form-group {
+  margin-bottom: 15px;
+}
+
+.find-contact-form label {
+  display: block;
+  font-weight: bold;
+  color: #ff4444;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 5px rgba(255, 0, 0, 0.7);
+}
+
+.find-contact-form input,
+.find-contact-form textarea {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.find-contact-form input:focus,
+.find-contact-form textarea:focus {
+  border: 1px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.9);
+}
+
+.find-contact-form textarea {
+  resize: vertical;
+}
+
+.find-submit-button {
+  background: linear-gradient(to right, #ff0000, #990000);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.7);
+}
+
+.find-submit-button:hover {
+  background: linear-gradient(to right, #cc0000, #660000);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .find-content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes backgroundFade {
+  0% {
+    background: linear-gradient(to bottom, #111, #222);
+  }
+  100% {
+    background: linear-gradient(to bottom, #222, #111);
+  }
+}

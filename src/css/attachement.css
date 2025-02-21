@@ -1,0 +1,243 @@
+.Appatta {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(46, 46, 46, 0.436), rgba(158, 20, 20, 0.436)); /* Black to red gradient with transparency */
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f0f0f0;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 1px solid rgba(102, 102, 102, 0.6); /* Semi-transparent border */
+    padding: 15px;
+    background: linear-gradient(145deg, rgba(62, 62, 62, 0.9), rgba(125, 20, 20, 0.8)); /* Grey to red gradient with transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: rgba(95, 27, 27, 0.9); /* Dark red with transparency */
+}
+
+.product-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    opacity: 0.9; /* Slight transparency on images */
+}
+
+button {
+    padding: 10px 15px;
+    background-color: rgba(211, 47, 47, 0.9); /* Red with transparency */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: rgba(183, 28, 28, 0.9); /* Darker red with transparency */
+    transform: scale(1.1);
+}
+
+/* Cart Section */
+.cartee {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15); /* Transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.cartee h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.cartee-item {
+    border-bottom: 1px solid rgba(68, 68, 68, 0.6); /* Semi-transparent border */
+    padding: 15px 0;
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff; /* White text for cart items */
+    background: linear-gradient(145deg, rgba(158, 20, 20, 0.9), rgba(46, 46, 46, 0.9)); /* Red-black gradient */
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.cartee-item:hover {
+    background: linear-gradient(145deg, rgba(158, 20, 20, 1), rgba(46, 46, 46, 1)); /* On hover, a more solid gradient */
+}
+
+.cartee-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.attachitem {
+    color: #ffffff; /* White text */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.buy-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 30px;
+    background: linear-gradient(145deg, rgba(211, 47, 47, 0.9), rgba(46, 46, 46, 0.9)); /* Red to black gradient */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.buy-button:hover {
+    background: linear-gradient(145deg, rgba(183, 28, 28, 1), rgba(46, 46, 46, 1)); /* Darker red-black gradient on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .motorcycles-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .motorcycles-grid {
+        width: 100%;
+    }
+
+    .bike-card {
+        width: 50%;
+    }
+
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .headcontent {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .motorcycles-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .bike-card {
+        width: 100%;
+    }
+
+    .products {
+        grid-template-columns: repeat(1, 1fr); /* Single column for smaller screens */
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .cartee-item {
+        flex-direction: column; /* Stacked cart items on smaller screens */
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .headcontent {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-section h4 {
+        font-size: 18px;
+    }
+
+    .product-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .bike-info {
+        font-size: 14px;
+    }
+
+    .buy-button {
+        width: 90%; /* Button takes most of the screen on smaller devices */
+        font-size: 1.2em;
+    }
+
+    .cartnameempty {
+        font-size: 1em;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

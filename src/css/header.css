@@ -1,0 +1,205 @@
+
+  /* Header Styles */
+/* General Header Styles */
+.head {
+    background-color: #000;
+    padding:1px 0px 0px 0px;
+    position: relative;
+    display: flex;
+  }
+  
+  .headlogo {
+    margin: 0px;
+    
+  }
+ 
+  
+  .headcontent {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    right:0;
+  }
+  
+  /* Styling for menu items */
+   li {
+    list-style: none;
+    padding-bottom: 0px;
+  }
+  
+  .heada {
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .heada:hover {
+    color: red;
+    transition: all 0.4s ease-in-out;
+  }
+   
+
+  @media (max-width: 1000px) {
+    .head {
+      background-color: #000;
+      padding:1px 0px 0px 0px;
+      position: relative;
+      display: flex;
+    }
+    .headcontent {
+      display: flex;
+      justify-content:center; 
+      align-items: left;
+      
+      position: absolute;
+      right:0;
+    }
+    li {
+      list-style: none;
+     
+    }
+    .heada {
+      text-decoration: none;
+      padding: 0px;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: medium;
+
+    }
+    a {
+      text-decoration: none;
+    }
+    
+    .heada:hover {
+      color: red;
+      transition: all 0.4s ease-in-out;
+    } 
+    
+    .logo{
+      height:50px;
+      width:170px;
+    }
+    
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 800px) {
+    /* Initially hide the header content */
+    .headcontent {
+      display: none;
+      flex-direction: column;
+      align-items: flex-start; /* Align items to the left */
+      gap: 20px;
+      
+      background-color: #000000; /* Black background for mobile */
+      
+      position: absolute;
+      top: 70px;
+      left: 0;
+      
+      width: 100%;
+      z-index: 100;
+      
+    }
+  
+    /* Mobile menu toggle (hamburger icon) */
+    .menu-toggle {
+      display: block;
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      cursor: pointer;
+      z-index: 10;
+     
+    }
+  
+    .menu-toggle .bar {
+      display: block;
+      width: 30px;
+      height: 4px;
+      background-color: rgb(246, 246, 246);
+      margin: 6px 0;
+      transition: 0.3s;
+      
+    }
+  
+    /* Show the menu when toggled */
+    .headcontent.show {
+      display: flex;
+    }
+  
+    /* Hamburger icon animation when active */
+    .menu-toggle.active .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .menu-toggle.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .menu-toggle.active .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  
+    /* Mobile menu items styling */
+    .headcontent ul {
+      display: flex;
+      flex-direction: column; /* Arrange items vertically */
+      align-items: flex-start; /* Align items to the left */
+      gap: 15px;
+      padding-left: 0;
+      width: 100%;
+    }
+  
+    .headcontent ul li {
+      width: 70%;
+      padding: 10px;
+      text-align: left;
+    }
+  
+    .heada {
+      color: rgb(255, 0, 0);
+      font-size: 1.2rem;
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .heada:hover {
+      color: rgb(255, 255, 255);
+      transition: all 0.4s ease-in-out;
+    }
+  
+    /* Logo resizing on mobile */
+    .headlogo {
+      margin-top: 0px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .logo {
+      width: 150px;
+      height: 45px; /* Smaller logo on mobile */
+    }
+  }
+
+   .headcontent ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+  }
+  
+   
+  .headcontent ul li {
+    padding: 5px 15px;
+  }
+
+  
+  
+  
