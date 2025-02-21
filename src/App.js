@@ -52,7 +52,7 @@ const App = () => {
     {/* header */}
     <div className="head">
       <span className="headlogo">
-        <Link to="/">
+        <Link to="/Royal-Riders/">
           <img className="logo" src="Screenshot 2024-12-19 105928.png" height={50} width={200} alt="Logo" />
         </Link>
       </span>
