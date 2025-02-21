@@ -1,14 +1,41 @@
 {
   "files": {
     "main.css": "/Royal-Riders/static/css/main.08e61c32.css",
-    "main.js": "/Royal-Riders/static/js/main.7930f4c4.js",
+    "main.js": "/Royal-Riders/static/js/main.ddc3ed6c.js",
     "static/media/background of blog.jpg": "/Royal-Riders/static/media/background of blog.cd0eb8200eb35e631e95.jpg",
+    "static/media/Himalaiyan.webp": "/Royal-Riders/static/media/Himalaiyan.5eeaa9cf1b3fda72181d.webp",
+    "static/media/tool kit.jpeg": "/Royal-Riders/static/media/tool kit.8318d372fb58d9f340ed.jpeg",
+    "static/media/hunter 350.webp": "/Royal-Riders/static/media/hunter 350.81696352e86502e1857b.webp",
+    "static/media/classic 350.jpg": "/Royal-Riders/static/media/classic 350.d4bed8401fe24c797122.jpg",
+    "static/media/super-meteor-650-right-front-three-quarter-2.webp": "/Royal-Riders/static/media/super-meteor-650-right-front-three-quarter-2.3e5c6e1dfd1677bac689.webp",
+    "static/media/meteor 350.jpg": "/Royal-Riders/static/media/meteor 350.ced816e68bb8489635de.jpg",
+    "static/media/gt 650.jpg": "/Royal-Riders/static/media/gt 650.c43ae28a3368a804ac62.jpg",
+    "static/media/shotgun 650.webp": "/Royal-Riders/static/media/shotgun 650.00d673b43985039b1fc7.webp",
+    "static/media/bullet 350.jpeg": "/Royal-Riders/static/media/bullet 350.f4608414b2f8d8b926f5.jpeg",
+    "static/media/scram-411.webp": "/Royal-Riders/static/media/scram-411.a1c5a5d3f5c391efe7d8.webp",
+    "static/media/seat cover.webp": "/Royal-Riders/static/media/seat cover.10535d5ccc0bb0af49f9.webp",
+    "static/media/pant.jpg": "/Royal-Riders/static/media/pant.03344d59db782726f7ad.jpg",
+    "static/media/head light.webp": "/Royal-Riders/static/media/head light.810429fff236d2963b3d.webp",
+    "static/media/brake pad.jpg": "/Royal-Riders/static/media/brake pad.1bc1917db164046ea660.jpg",
+    "static/media/Interceptor.jpg": "/Royal-Riders/static/media/Interceptor.1e1815c6135ae842c9e7.jpg",
+    "static/media/enngine guard.webp": "/Royal-Riders/static/media/enngine guard.4581c7e439b81350ad5b.webp",
+    "static/media/thunderbird.jpg": "/Royal-Riders/static/media/thunderbird.0f57022ebdf8a9788564.jpg",
+    "static/media/handlegrip.webp": "/Royal-Riders/static/media/handlegrip.aa16ebe79a03ecf80f63.webp",
+    "static/media/oil filter.jpg": "/Royal-Riders/static/media/oil filter.dc9a6188be6d430b2871.jpg",
+    "static/media/air filter.webp": "/Royal-Riders/static/media/air filter.40fc61d8c22bd4c69f03.webp",
+    "static/media/rear mirror.webp": "/Royal-Riders/static/media/rear mirror.eebda1a037578d8aff24.webp",
+    "static/media/chain set.webp": "/Royal-Riders/static/media/chain set.54990a35447853ea1185.webp",
+    "static/media/Screenshot 2024-12-19 105928.png": "/Royal-Riders/static/media/Screenshot 2024-12-19 105928.af7d3fd29f3c6e4c8a6a.png",
+    "static/media/windsheild.webp": "/Royal-Riders/static/media/windsheild.142ef5d0d43e1b8e57ef.webp",
+    "static/media/footpegs.avif": "/Royal-Riders/static/media/footpegs.7e42e553023d0fab04a0.avif",
+    "static/media/tank cover.jpg": "/Royal-Riders/static/media/tank cover.f07852d44ac6068f1172.jpg",
+    "static/media/clutch lever.webp": "/Royal-Riders/static/media/clutch lever.dade6ad04dc99e4b5e3f.webp",
     "index.html": "/Royal-Riders/index.html",
     "main.08e61c32.css.map": "/Royal-Riders/static/css/main.08e61c32.css.map",
-    "main.7930f4c4.js.map": "/Royal-Riders/static/js/main.7930f4c4.js.map"
+    "main.ddc3ed6c.js.map": "/Royal-Riders/static/js/main.ddc3ed6c.js.map"
   },
   "entrypoints": [
     "static/css/main.08e61c32.css",
-    "static/js/main.7930f4c4.js"
+    "static/js/main.ddc3ed6c.js"
   ]
 }
