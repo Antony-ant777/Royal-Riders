@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Royal-riders/static/css/main.4bdbee71.css",
-    "main.js": "/Royal-riders/static/js/main.cae20590.js",
-    "static/media/background of blog.jpg": "/Royal-riders/static/media/background of blog.cd0eb8200eb35e631e95.jpg",
-    "index.html": "/Royal-riders/index.html",
-    "main.4bdbee71.css.map": "/Royal-riders/static/css/main.4bdbee71.css.map",
-    "main.cae20590.js.map": "/Royal-riders/static/js/main.cae20590.js.map"
+    "main.css": "/Royal-Riders/static/css/main.08e61c32.css",
+    "main.js": "/Royal-Riders/static/js/main.cae20590.js",
+    "static/media/background of blog.jpg": "/Royal-Riders/static/media/background of blog.cd0eb8200eb35e631e95.jpg",
+    "index.html": "/Royal-Riders/index.html",
+    "main.08e61c32.css.map": "/Royal-Riders/static/css/main.08e61c32.css.map",
+    "main.cae20590.js.map": "/Royal-Riders/static/js/main.cae20590.js.map"
   },
   "entrypoints": [
-    "static/css/main.4bdbee71.css",
+    "static/css/main.08e61c32.css",
     "static/js/main.cae20590.js"
   ]
 }
